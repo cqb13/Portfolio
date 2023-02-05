@@ -12,6 +12,8 @@ firebase.json
 .firebase
 .vscode
 
+404.html
+
 node_modules
 dist
 dist-ssr
