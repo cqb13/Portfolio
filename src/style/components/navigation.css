@@ -1,0 +1,58 @@
+.page-view {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  width: 80%;
+  gap: 10px;
+  margin-bottom: 10px;
+  background-color: #242424;
+}
+
+.nav-bar > .left,
+.right > .switch-page {
+  all: unset;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: text-shadow 0.25s;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.on-page {
+  text-decoration: underline !important;
+}
+
+.page-view > .switch-page {
+  font-size: 2rem;
+  text-decoration: none;
+  transition: letter-spacing 0.25s;
+}
+
+.page-view > .switch-page:hover {
+  letter-spacing: 3px;
+}
+
+.switch-page {
+  all: unset;
+  cursor: pointer;
+  transition: text-shadow 0.25s;
+}
+
+.switch-page:hover {
+  text-shadow: #496bbe 5px 5px 10px;
+}

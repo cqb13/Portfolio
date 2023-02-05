@@ -1,0 +1,18 @@
+.tech-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  transition: 0.25s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
