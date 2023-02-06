@@ -5,7 +5,7 @@ const ProjectCards = () => {
   return (
     <section className='content cards'>
       {projects.map((t, i) => (
-        <div key={i} className='project'>
+        <div key={i} className='project zoom-in'>
           <h2>{t.title}</h2>
           <p>{t.description}</p>
           <section className='action-bar'>

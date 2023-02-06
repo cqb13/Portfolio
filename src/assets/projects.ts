@@ -44,7 +44,7 @@ const projects: Project[] = [
     description: "This is a simple Tetris game, made in vanilla javascript.",
     techs: [Tech.js, Tech.html, Tech.css],
     codeURL: "https://github.com/cqb13/Tetris",
-    webURL: "https://cqb13.me/Tetris/"
+    webURL: "https://tetris-murex.vercel.app/"
   },
   {
     title: "Tic-Tac-Toe",
@@ -52,7 +52,7 @@ const projects: Project[] = [
       "This is a simple Tic-Tac-Toe game, made in vanilla javascript.",
     techs: [Tech.js, Tech.html, Tech.css],
     codeURL: "https://github.com/cqb13/Tic-Tac-Toe",
-    webURL: "https://cqb13.me/Tic-Tac-Toe/"
+    webURL: "https://tic-tac-toe-two-tau.vercel.app/"
   },
   {
     title: "Python Hangman",
@@ -81,7 +81,7 @@ const projects: Project[] = [
     description:
       "This is a simple website I made in my free time, it draws circles on the screen.",
     techs: [Tech.js, Tech.html, Tech.css],
-    webURL: "https://cqb13.me/Circles/",
+    webURL: "https://circles-five.vercel.app/",
     codeURL: "https://github.com/cqb13/Circles"
   },
   {
@@ -90,7 +90,7 @@ const projects: Project[] = [
       "This is a simple website I made while trying to make a frosted glass effect.",
     techs: [Tech.js, Tech.html, Tech.css],
     webURL: "https://cqb13.me/Cool-Blocks/",
-    codeURL: "https://github.com/cqb13/Cool-Blocks"
+    codeURL: "https://cool-blocks.vercel.app/"
   },
   {
     title: "No More Scrollbars",
