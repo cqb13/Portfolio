@@ -15,7 +15,8 @@
   width: 80%;
   gap: 10px;
   margin-bottom: 10px;
-  background-color: #242424;
+  background-color: var(--dark);
+  z-index: 1;
 }
 
 .nav-bar > .left,
@@ -54,5 +55,5 @@
 }
 
 .switch-page:hover {
-  text-shadow: #496bbe 5px 5px 10px;
+  text-shadow: var(--color-primary) 5px 5px 10px;
 }

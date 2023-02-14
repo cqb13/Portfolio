@@ -3,9 +3,15 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --color-primary: #496bbe;
+  --color-sub: #868686;
+  --white: #ffffff;
+  --dark: #242424;
+  --dark-highlight: #212121;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--dark);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,7 +39,7 @@ main {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 
@@ -52,23 +58,33 @@ span {
 }
 
 a {
-  color: #496bbe;
+  color: var(--color-primary);
   transition: 0.25s;
 }
 
 a:hover {
   text-decoration: underline;
-  text-shadow: #496bbe 0px 0px 10px;
+  text-shadow: var(--color-primary) 0px 0px 10px;
 }
 
 sub {
-  color: #868686;
+  color: var(--color-sub);
   font-size: 0.8rem;
   padding: 5px;
 }
 
 b {
-  text-shadow: #496bbe 1px 1px 1px;
+  text-shadow: var(--color-primary) 1px 1px 1px;
+}
+
+hr {
+  width: 100%;
+}
+
+.divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .cards {
@@ -90,6 +106,26 @@ b {
   gap: 15px;
 }
 
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.horizontal-container .left {
+  width: 60%;
+}
+
+.horizontal-container .right {
+  width: 40%;
+}
+
 .name-display h1 {
   margin: 0;
 }
@@ -105,7 +141,11 @@ b {
 }
 
 .accented-text {
-  text-shadow: #496bbe 5px 5px 10px;
+  text-shadow: var(--color-primary) 5px 5px 10px;
+}
+
+.large-text {
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 650px) {
@@ -132,6 +172,9 @@ b {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: var(--white);
+
+    --dark: var(--white);
+    --dark-highlight: #f5f5f5;
   }
 }
