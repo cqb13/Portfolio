@@ -26,7 +26,7 @@ const NavBar = ({ type }: { type: "homepage" | "content" }) => {
       ) : null}
       <section className={type == "content" ? "right" : "page-view zoom-in"}>
         <Link to='/about' className='switch-page'>
-          About Me
+          About
         </Link>
         <Link to='/projects' className='switch-page'>
           Projects
