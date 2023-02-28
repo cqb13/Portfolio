@@ -13,7 +13,9 @@ export enum Tech {
   vue = "vue",
   rust = "rust",
   java = "java",
-  cplusplus = "cplusplus"
+  cplusplus = "cplusplus",
+  nextjs = "nextjs",
+  flask = "flask",
 }
 
 const tech = {
@@ -106,6 +108,18 @@ const tech = {
     alt: "c++ icon",
     url: "",
     title: "c++"
+  },
+  nextjs: {
+    src: "https://nextjs.org/static/favicon/favicon-32x32.png",
+    alt: "nextjs icon",
+    url: "https://nextjs.org/",
+    title: "Next.js"
+  },
+  flask: {
+    src: "https://lh3.googleusercontent.com/pw/AMWts8A5SB1stGDgUeB_ERivYSKDTegDKlnPbZCMCR7AJpowIRdw6S_yCtIa507K4kt8QXn1uLAh178Bk7D8Vmrdh85jgUseqrir-2M-UCT8UDnbBAtfMLlgh41AaVawowGbduFrMfU5lDtyqQlYwsZT0PI=w723-h952-no?authuser=4",
+    alt: "flask icon",
+    url: "https://flask.palletsprojects.com/en/2.0.x/",
+    title: "Flask"
   }
 };
 
