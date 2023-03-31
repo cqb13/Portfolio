@@ -11,8 +11,8 @@ const About = () => {
           <h2>About Me</h2>
           <hr />
           <span>
-            Hello, I go by <b>cqb13</b>, I’m a 15 year old, self-taught,
-            aspiring <b>web developer</b>. I excel at building simple websites
+            Hello, I go by <b>cqb13</b>, I’m a 16 year old, self-taught,
+            <b>web developer</b>. I excel at building simple websites
             that work well on smartphones, tablets, and desktops. I am always
             working on improving and expanding my skills.
             <br />
