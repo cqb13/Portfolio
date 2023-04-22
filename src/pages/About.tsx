@@ -18,9 +18,9 @@ const About = () => {
             <br />
             <br />I have been programming for about 4 years now, and have
             learned many languages and frameworks. I started off learning{" "}
-            <b>Python</b> for fun, then after I became interested in Minecraft
-            modding I learned <b>Java</b>, I learned a few more languages such
-            as <b>C++</b> for game dev but I never really got into them. But
+            <b>Python</b>, then after I becoming interested in Minecraft
+            modding I learned <b>Java</b>. I learned a few more languages such
+            as <b>C++</b> for game dev, but I never really got into them. But
             after taking a CS class in high school I became interested in web
             development, and learned <b>HTML</b> and <b>CSS</b> and then moved
             on to <b>Javascript</b>, I am currently learning <b>Typescript</b>.
@@ -37,10 +37,10 @@ const About = () => {
             <br />
             <br /> <b>Javascript</b> and <b>Typescript</b> are my main
             languages, for both frontend and backend. For styling I currently
-            use vanilla CSS, but I am learning SCSS and Tailwind. I have not
-            delved too deep into backend development, I some experience with{" "}
+            use vanilla CSS, but I'm learning SCSS and Tailwind. I have not
+            delved too deep into backend development, but I some experience with{" "}
             <b>Node.js</b>, and I am proficient with <b>Firebase</b> which I use
-            for hosting, authentication, and database, I am also learning{" "}
+            for hosting, authentication, and databases, I am also learning{" "}
             <b>Mongo DB</b>.
           </span>
           <TechIcons techs={Object.values(Tech)} />
