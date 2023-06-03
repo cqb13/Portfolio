@@ -5,29 +5,30 @@ import { Tech } from "../assets/tech";
 const About = () => {
   return (
     <main>
-      <NavBar type='content' />
-      <section className='content'>
-        <article className='enter-left'>
+      <NavBar type="content" />
+      <section className="content">
+        <article className="enter-left">
           <h2>About Me</h2>
           <hr />
           <span>
-            Hello, I go by <b>cqb13</b>, I’m a 16 year old, self-taught,
-            <b>web developer</b>. I excel at building simple websites
-            that work well on smartphones, tablets, and desktops. I am always
-            working on improving and expanding my skills.
+            Hello, my name is <b>Maksim Straus</b>, I go by <b>cqb13</b>, I’m a
+            16 year old, self-taught,
+            <b>web developer</b>. I excel at building simple websites that work
+            well on smartphones, tablets, and desktops. I am always working on
+            improving and expanding my skills.
             <br />
             <br />I have been programming for about 4 years now, and have
             learned many languages and frameworks. I started off learning{" "}
-            <b>Python</b>, then after I becoming interested in Minecraft
-            modding I learned <b>Java</b>. I learned a few more languages such
-            as <b>C++</b> for game dev, but I never really got into them. But
-            after taking a CS class in high school I became interested in web
+            <b>Python</b>, then after I becoming interested in Minecraft modding
+            I learned <b>Java</b>. I learned a few more languages such as{" "}
+            <b>C++</b> for game dev, but I never really got into them. But after
+            taking a CS class in high school I became interested in web
             development, and learned <b>HTML</b> and <b>CSS</b> and then moved
             on to <b>Javascript</b>, I am currently learning <b>Typescript</b>.
           </span>
         </article>
         <br />
-        <article className='enter-left'>
+        <article className="enter-left">
           <h2>My Skills</h2>
           <hr />
           <span>
