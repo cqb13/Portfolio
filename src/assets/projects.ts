@@ -17,10 +17,10 @@ const projects: Project[] = [
     title: "Learning Latin",
     description:
       "This website has a collection of resources for learning Latin. I made this website in order to help me study for my Latin class. While making this website, I learned how to use React, Firebase, and Flask, I later recreated this website using NextJS and typescript.",
-    techs: [Tech.reactjs, Tech.nextjs, Tech.ts, Tech.css],
-    img: "https://lh3.googleusercontent.com/pw/AMWts8DSSzVLCqQCpUZjWlrtDbGT0mVx4Z-a0ayDyDR4aEr1pNDN6FMQTBUs4KOAeBhelSkPXV-sHo55WS65JHeiNg6ppLCPBA01Bu_fmuX9gVcM9hAHv51z1zIckslljEyALQKBVb7wCs8ui2vF2FCwOww=w1690-h950-no?authuser=4",
+    techs: [Tech.reactjs, Tech.nextjs, Tech.ts, Tech.tailwind],
+    img: "https://lh3.googleusercontent.com/pw/AJFCJaWMlxGVcDGQtsXzNyW2bqZYng-KrCcMEL3a7oOL7KCYRlnBzb8xJVumwBNUsnZfynCqSW0vwvQdsenszg4Xn5gPatb6P_-E4b0NinELu_JEDPd4MX9m_WceTQnUoF2jJHs8c5pZtsBWa9SQ07Kf6Vc=w1689-h950-s-no?authuser=2",
     webURL: "https://learninglatin.net",
-    codeURL: "https://github.com/cqb13/Learn-Latin"
+    codeURL: "https://github.com/cqb13/Learning-Latin"
   },
   {
     type: "main",
@@ -49,6 +49,22 @@ const projects: Project[] = [
       "This is a addon for Meteor client, a Minecraft hacked client. It focuses on giving the user more customization options.",
     techs: [Tech.java],
     codeURL: "https://github.com/cqb13/Numby-hack"
+  },
+  {
+    type: "other",
+    title: "Folder Mapper",
+    description: "Maps out a folders structure and creates a tree view of it.",
+    techs: [Tech.ts, Tech.vue, Tech.tailwind, Tech.vite],
+    codeURL: "https://github.com/cqb13/folder-mapper",
+    webURL: "https://foldermap.vercel.app/"
+  },
+  {
+    type: "other",
+    title: "Open Words TS",
+    description: "Latin dictionary parser, with two way translation.",
+    techs: [Tech.ts],
+    codeURL: "https://github.com/Templar-Development/Open-Words-TS",
+    webURL: "https://learninglatin.net/translate/"
   },
   {
     type: "other",
@@ -82,33 +98,8 @@ const projects: Project[] = [
     description:
       "This is a chrome extension that allows you to fully customize your new tab page. You can add your own background, change the tab name, and change the tab icon.",
     techs: [Tech.js, Tech.html, Tech.css],
-    codeURL: "https://github.com/cqb13/Custom-Chrome-Tab"
-  },
-  {
-    type: "other",
-    title: "William Whitaker's Words EXT",
-    description:
-      "This extension brings back the old William Whitaker's Words website, also allowing you to search for words from the extension",
-    techs: [Tech.js, Tech.html, Tech.css],
-    codeURL: "https://github.com/cqb13/William-Whitakers-Words-EXT"
-  },
-  {
-    type: "other",
-    title: "Circles",
-    description:
-      "This is a simple website I made in my free time, it draws circles on the screen.",
-    techs: [Tech.js, Tech.html, Tech.css],
-    webURL: "https://circles-five.vercel.app/",
-    codeURL: "https://github.com/cqb13/Circles"
-  },
-  {
-    type: "other",
-    title: "Cool Blocks",
-    description:
-      "This is a simple website I made while trying to make a frosted glass effect.",
-    techs: [Tech.js, Tech.html, Tech.css],
-    webURL: "https://cool-blocks.vercel.app/",
-    codeURL: "https://github.com/cqb13/Cool-Blocks"
+    codeURL: "https://github.com/cqb13/Custom-Chrome-Tab",
+    webURL: "https://chrome.google.com/webstore/detail/custom-chrome-tab/abbfmpbemldjofokknphnibmcfpjilpi"
   },
   {
     type: "other",
@@ -117,6 +108,13 @@ const projects: Project[] = [
       "This is a chrome extension that removes all scrollbars from any page, because I hate scrollbars.",
     techs: [Tech.js, Tech.html, Tech.css],
     codeURL: "https://github.com/cqb13/No-More-Scrollbar"
+  },
+  {
+    type: "other",
+    title: "Github Release Downloads",
+    description: "An API that provides quick access to various information about a specific repositories releases.",
+    techs: [Tech.python, Tech.flask],
+    codeURL: "https://github.com/Templar-Development/Github-Release-Downloads/tree/main",
   }
 ];
 
