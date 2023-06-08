@@ -1,5 +1,6 @@
 import NavBar from "../components/navigation/NavBar";
 import TechIcons from "../components/tech/TechIcons";
+import dev from "../assets/Software-Developer.svg";
 import { Tech } from "../assets/tech";
 
 const About = () => {
@@ -49,7 +50,7 @@ const About = () => {
           </article>
         </div>
         <div className="right">
-          <img src="../assets/Software-Developer.svg" alt="cool pic aboutImg" />
+          <img src={dev} alt="cool pic" />
         </div>
       </section>
     </main>
