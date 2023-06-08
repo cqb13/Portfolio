@@ -49,7 +49,7 @@ const About = () => {
           </article>
         </div>
         <div className="right">
-          <img src="../../public/Software-Developer.svg" alt="cool pic aboutImg" />
+          <img src="../assets/Software-Developer.svg" alt="cool pic aboutImg" />
         </div>
       </section>
     </main>
