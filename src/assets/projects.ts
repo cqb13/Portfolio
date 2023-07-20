@@ -39,7 +39,7 @@ const projects: Project[] = [
     description: "This is the website for the Numby Hack, my Meteor Client addon. This website showcases all the features that Numby Hack provides, allows the user to download the addon, and shows various statistics from the github repo.",
     techs: [Tech.reactjs, Tech.vite, Tech.ts, Tech.css, Tech.flask],
     img: "https://lh3.googleusercontent.com/pw/AMWts8DV6XSOn6ECTVLMgdQ036kCEpbiBaJAARfHeHWGcaN9JEasMswDIBdMqQm3iuKsL5zx7GAVswjXn8Oygp_4QGc1NkExiIAplvJYLFtvgnG_WRORFhrhBTsZO_zfQl3WJ728XLCjTT74vorporgTBT8=w1690-h950-no?authuser=4",
-    webURL: "https://numbyhack.vercel.app/",
+    webURL: "https://numbyhack.cqb13.dev",
     codeURL: "https://github.com/cqb13/Numby-Hack-Website"
   },
   {
@@ -56,7 +56,7 @@ const projects: Project[] = [
     description: "Maps out a folders structure and creates a tree view of it.",
     techs: [Tech.ts, Tech.vue, Tech.tailwind, Tech.vite],
     codeURL: "https://github.com/cqb13/folder-mapper",
-    webURL: "https://foldermap.vercel.app/"
+    webURL: "https://foldermap.cqb13.dev/"
   },
   {
     type: "other",

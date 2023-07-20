@@ -1,5 +1,5 @@
-import NavBar from "../components/navigation/NavBar";
 import ProjectCards from "../components/projectCards/ProjectCards";
+import NavBar from "../components/navigation/NavBar";
 
 const Projects = () => {
   return (
