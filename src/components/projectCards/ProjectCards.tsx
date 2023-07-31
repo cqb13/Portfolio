@@ -70,7 +70,7 @@ const ProjectCards = (types: Card) => {
                 </section> 
                 : null}
               </section>
-              <section className="horizontal-container">
+              <section className="links">
                 <a href={t.codeURL} target="_blank" className="large-text">View Code</a>
                 {t.webURL ?
                   <a href={t.webURL} target="_blank" className="large-text">Try Website</a>
