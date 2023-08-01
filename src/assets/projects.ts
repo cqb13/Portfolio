@@ -30,7 +30,7 @@ const projects: Project[] = [
     techs: [Tech.reactjs, Tech.js, Tech.firebase, Tech.css],
     tags: "WIP",
     img: "https://lh3.googleusercontent.com/pw/AMWts8BL9VMhSnErqqZ-8fCqwZel9CmCNsHN87bRLEP_-KYQAh4_sEbUM99oVNXnTEjd0CFf3IqxVqERRN2fHYNDNqxEK8A64JvJCRQjtQNlhKuXIjjhUat-tk4k-gew8yMe78qjig2EKxR0XuxTmjQ8Lw0=w1690-h950-no?authuser=4",
-    webURL: "https://archery-scoring.vercel.app",
+    webURL: "https://archery.cqb13.dev",
     codeURL: "https://github.com/cqb13/archery-scoring"
   },
   {

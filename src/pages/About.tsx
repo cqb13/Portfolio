@@ -15,7 +15,7 @@ const About = () => {
             <span>
               Hello, my name is <b>Maksim Straus</b>, I go by <b>cqb13</b>, I’m
               a 16 year old, self-taught,
-              <b>web developer</b>. I excel at building simple websites that
+              <b>web developer</b>. I excel at building websites that
               work well on smartphones, tablets, and desktops. I am always
               working on improving and expanding my skills.
               <br />
