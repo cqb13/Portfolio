@@ -14,6 +14,7 @@ export enum Tech {
   java = "java",
   nextjs = "nextjs",
   flask = "flask",
+  rust = "rust",
 }
 
 const tech = {
@@ -106,7 +107,13 @@ const tech = {
     alt: "flask icon",
     url: "https://flask.palletsprojects.com/en/2.0.x/",
     title: "Flask"
-  }
+  },
+  rust: {
+    src: "https://lh3.googleusercontent.com/pw/ADCreHezsDcXMzC5wXoyOSXNMO8k5rQeOpckI0ngjnMOk15RZJCFzCSWSOZotKax8wdya9XIXVNlb1LDA_kRm8xE45bDOh_7cm-zB2Jv77QlJUfW_CcTikrHnEnogAt3Geocph0Jja8wxwtkJiZzA8S9kcs=w128-h128-s-no?authuser=4",
+    alt: "rust icon",
+    url: "https://www.rust-lang.org/",
+    title: "Rust"
+  },
 };
 
 export default tech;

@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: "Learning Latin",
     description:
       "This website has a collection of resources for learning Latin. I made this website in order to help me study for my Latin class. While making this website, I learned how to use React, Firebase, and Flask, I later recreated this website using NextJS and typescript.",
-    techs: [Tech.reactjs, Tech.nextjs, Tech.ts, Tech.tailwind],
+    techs: [Tech.nextjs, Tech.ts, Tech.tailwind],
     img: "https://lh3.googleusercontent.com/pw/AJFCJaWMlxGVcDGQtsXzNyW2bqZYng-KrCcMEL3a7oOL7KCYRlnBzb8xJVumwBNUsnZfynCqSW0vwvQdsenszg4Xn5gPatb6P_-E4b0NinELu_JEDPd4MX9m_WceTQnUoF2jJHs8c5pZtsBWa9SQ07Kf6Vc=w1689-h950-s-no?authuser=2",
     webURL: "https://learninglatin.net",
     codeURL: "https://github.com/cqb13/Learning-Latin"
@@ -27,20 +27,21 @@ const projects: Project[] = [
     title: "Archery Scoring",
     description:
       "This website is a tool for scoring archery competitions. I made this website as I could not find any free scoring apps that worked well. While making this website, I greatly improved my React skills, and my ability to use Firebase, I also learned much about website design.",
-    techs: [Tech.reactjs, Tech.js, Tech.firebase, Tech.css],
+    techs: [Tech.nextjs, Tech.ts, Tech.tailwind, Tech.firebase],
     tags: "WIP",
-    img: "https://lh3.googleusercontent.com/pw/AMWts8BL9VMhSnErqqZ-8fCqwZel9CmCNsHN87bRLEP_-KYQAh4_sEbUM99oVNXnTEjd0CFf3IqxVqERRN2fHYNDNqxEK8A64JvJCRQjtQNlhKuXIjjhUat-tk4k-gew8yMe78qjig2EKxR0XuxTmjQ8Lw0=w1690-h950-no?authuser=4",
+    img: "https://lh3.googleusercontent.com/pw/ADCreHfS7rpDJCPD5HskA7_m3yLF2Owu8db-MP1tTrEJE2UAdtmuUyfrGD7yifULqzncdeemQjj1kjk-z6o2K6cHWRyvG2cjX05CEZnRTcknuNzVlqVinqse6-cYjqFv_1RCmHl6zJdwX36MdJ_gIDUI0uRd=w2208-h1380-s-no?authuser=4",
     webURL: "https://archery.cqb13.dev",
     codeURL: "https://github.com/cqb13/archery-scoring"
   },
   {
     type: "main",
-    title: "Numby Hack Website",
-    description: "This is the website for the Numby Hack, my Meteor Client addon. This website showcases all the features that Numby Hack provides, allows the user to download the addon, and shows various statistics from the github repo.",
-    techs: [Tech.reactjs, Tech.vite, Tech.ts, Tech.css, Tech.flask],
-    img: "https://lh3.googleusercontent.com/pw/AMWts8DV6XSOn6ECTVLMgdQ036kCEpbiBaJAARfHeHWGcaN9JEasMswDIBdMqQm3iuKsL5zx7GAVswjXn8Oygp_4QGc1NkExiIAplvJYLFtvgnG_WRORFhrhBTsZO_zfQl3WJ728XLCjTT74vorporgTBT8=w1690-h950-no?authuser=4",
-    webURL: "https://numbyhack.cqb13.dev",
-    codeURL: "https://github.com/cqb13/Numby-Hack-Website"
+    title: "My Diary Online",
+    description:
+      "An online diary manager, allowing you to create and personalize your own diaries, and store them securely online.",
+    techs: [Tech.nextjs, Tech.ts, Tech.tailwind, Tech.firebase],
+    img: "https://lh3.googleusercontent.com/pw/ADCreHcarObqH79kC9Z3Zd1i4rteu_T6zAomi_MrUbxeisPLgqDnSOUP3DAxn7rPFwyXLYSktSk1Y-MGGEEpSXv8AvI7IEoFHPAwswLiBQpdr3qx4jlUYJ2AePE3B9FqyAQ_1UJt115pLfyfc9En9F4n0u7p=w2078-h1300-s-no?authuser=4",
+    webURL: "https://diary.cqb13.dev",
+    codeURL: "https://github.com/cqb13/diary"
   },
   {
     type: "other",
@@ -60,11 +61,37 @@ const projects: Project[] = [
   },
   {
     type: "other",
-    title: "Open Words TS",
-    description: "Latin dictionary parser, with two way translation.",
-    techs: [Tech.ts],
-    codeURL: "https://github.com/Templar-Development/Open-Words-TS",
-    webURL: "https://learninglatin.net/translate/"
+    title: "Vocab Vault",
+    description: "Latin dictionary parser, with two way translation",
+    techs: [Tech.rust],
+    codeURL: "https://github.com/cqb13/vocab-vault"
+  },
+  {
+    type: "other",
+    title: "Numby Hack Website",
+    description:
+      "This is the website for the Numby Hack addon for Meteor client.",
+    techs: [Tech.reactjs, Tech.ts, Tech.css, Tech.flask],
+    codeURL: "https://github.com/cqb13/Numby-Hack-Website",
+    webURL: "https://numbyhack.cqb13.dev/"
+  },
+  {
+    type: "other",
+    title: "Custom Chrome Tab",
+    description:
+      "This is a chrome extension that allows you to fully customize your new tab page. You can add your own background, change the tab name, and change the tab icon.",
+    techs: [Tech.js, Tech.html, Tech.css],
+    codeURL: "https://github.com/cqb13/Custom-Chrome-Tab",
+    webURL:
+      "https://chrome.google.com/webstore/detail/custom-chrome-tab/abbfmpbemldjofokknphnibmcfpjilpi"
+  },
+  {
+    type: "other",
+    title: "No More Scrollbars",
+    description:
+      "This is a chrome extension that removes all scrollbars from any page, because I hate scrollbars.",
+    techs: [Tech.js, Tech.html, Tech.css],
+    codeURL: "https://github.com/cqb13/No-More-Scrollbar"
   },
   {
     type: "other",
@@ -94,27 +121,12 @@ const projects: Project[] = [
   },
   {
     type: "other",
-    title: "Custom Chrome Tab",
-    description:
-      "This is a chrome extension that allows you to fully customize your new tab page. You can add your own background, change the tab name, and change the tab icon.",
-    techs: [Tech.js, Tech.html, Tech.css],
-    codeURL: "https://github.com/cqb13/Custom-Chrome-Tab",
-    webURL: "https://chrome.google.com/webstore/detail/custom-chrome-tab/abbfmpbemldjofokknphnibmcfpjilpi"
-  },
-  {
-    type: "other",
-    title: "No More Scrollbars",
-    description:
-      "This is a chrome extension that removes all scrollbars from any page, because I hate scrollbars.",
-    techs: [Tech.js, Tech.html, Tech.css],
-    codeURL: "https://github.com/cqb13/No-More-Scrollbar"
-  },
-  {
-    type: "other",
     title: "Github Release Downloads",
-    description: "An API that provides quick access to various information about a specific repositories releases.",
+    description:
+      "An API that provides quick access to various information about a specific repositories releases.",
     techs: [Tech.python, Tech.flask],
-    codeURL: "https://github.com/Templar-Development/Github-Release-Downloads/tree/main",
+    codeURL:
+      "https://github.com/Templar-Development/Github-Release-Downloads/tree/main"
   }
 ];
 
