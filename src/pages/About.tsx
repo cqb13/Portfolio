@@ -18,7 +18,7 @@ const About = () => {
               <b> web developer</b>. I excel at building websites that work well
               on smartphones, tablets, and desktops.
               <br />
-              <br />I have been programming for about 4 years now, and have
+              <br />I have been programming for about 5 years now, and have
               learned many languages and frameworks. I started off learning{" "}
               <b>Python</b>, then after I becoming interested in Minecraft
               modding I learned <b>Java</b>. I learned a few more languages such
