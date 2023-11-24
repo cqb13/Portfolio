@@ -134,10 +134,75 @@ hr {
   width: 80%;
 }
 
+.contacts {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  gap: 2rem
+}
+
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-form section {
+  display: flex;
+  padding: 0px;
+  gap: 1rem;
+}
+
+.contact-form section input[type="text"] {
+  flex-grow: 1;
+}
+
+.contact-form .contact {
+  align-items: flex-start;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--dark-highlight);
+  color: var(--white);
+}
+
+input[type="button"] {
+  cursor: pointer;
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: 0.25s;
+  background-color: rgba(73, 107, 190, 0.5);
+}
+
+input[type="button"]:hover {
+  background-color: rgba(73, 107, 190, 0.75);
+}
+
+input[type="button"]:active {
+  background-color: rgba(73, 107, 190, 1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  box-shadow: #080809 0px 0px 10px;
+  outline: none;
 }
 
 .accented-text {
@@ -196,15 +261,5 @@ hr {
   }
   .horizontal-container .right {
     display: none;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: var(--white);
-
-    --dark: var(--white);
-    --dark-highlight: #f5f5f5;
   }
 }
