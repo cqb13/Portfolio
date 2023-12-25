@@ -139,7 +139,7 @@ hr {
   flex-direction: row;
   width: 80%;
   justify-content: space-between;
-  gap: 2rem
+  gap: 2rem;
 }
 
 .contact {
@@ -234,6 +234,17 @@ textarea:focus {
   width: 90%;
 }
 
+.notification {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 20rem;
+  padding: 4px;
+  border-radius: 16px;
+  background-color: rgba(73, 107, 190, 0.75);
+  animation: slide-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 @media only screen and (max-width: 650px) {
   h1 {
     margin: 0px;
@@ -261,5 +272,14 @@ textarea:focus {
   }
   .horizontal-container .right {
     display: none;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }

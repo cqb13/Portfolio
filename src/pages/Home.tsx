@@ -1,4 +1,4 @@
-import NavBar from "../components/navigation/NavBar";
+import NavBar from "../components/NavBar";
 import logo from "../assets/logo.png";
 
 const Home = () => {

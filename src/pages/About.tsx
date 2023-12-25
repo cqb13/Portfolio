@@ -1,5 +1,5 @@
-import NavBar from "../components/navigation/NavBar";
-import TechIcons from "../components/tech/TechIcons";
+import NavBar from "../components/NavBar";
+import TechIcons from "../components/TechIcons";
 import dev from "../assets/Software-Developer.svg";
 import { Tech } from "../assets/tech";
 

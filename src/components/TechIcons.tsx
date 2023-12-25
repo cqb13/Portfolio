@@ -1,5 +1,5 @@
-import type { Tech } from "../../assets/tech";
-import tech from "../../assets/tech";
+import type { Tech } from "../assets/tech";
+import tech from "../assets/tech";
 
 const TechIcons = ({ techs }: { techs: Tech[] }) => {
   return (

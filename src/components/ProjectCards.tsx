@@ -1,5 +1,5 @@
-import projects from "../../assets/projects";
-import TechIcons from "../tech/TechIcons";
+import projects from "../assets/projects";
+import TechIcons from "./TechIcons";
 
 export type Card = {
   type: "main" | "other";
@@ -12,8 +12,6 @@ const ProjectCards = (types: Card) => {
     );
   };
   const mobile = isMobile();
-
-  console.log(mobile);
 
   return (
     <>
@@ -59,22 +57,34 @@ const ProjectCards = (types: Card) => {
           {t.type === "main" && types.type === "main" && (
             <div key={i} className='project zoom-in'>
               <h2>{t.title}</h2>
-              <section className={mobile ? "vertical-container" : "horizontal-container"}>
+              <section
+                className={
+                  mobile ? "vertical-container" : "horizontal-container"
+                }
+              >
                 <section className='left'>
                   <p>{t.description}</p>
                   <TechIcons techs={t.techs} />
                 </section>
-                {t.img ? 
-                <section className='right'>
-                  <img src={t.img} alt={t.title + ' Showcase'} className="showcase"/>
-                </section> 
-                : null}
+                {t.img ? (
+                  <section className='right'>
+                    <img
+                      src={t.img}
+                      alt={t.title + " Showcase"}
+                      className='showcase'
+                    />
+                  </section>
+                ) : null}
               </section>
-              <section className="links">
-                <a href={t.codeURL} target="_blank" className="large-text">View Code</a>
-                {t.webURL ?
-                  <a href={t.webURL} target="_blank" className="large-text">Try Website</a>
-                : null}
+              <section className='links'>
+                <a href={t.codeURL} target='_blank' className='large-text'>
+                  View Code
+                </a>
+                {t.webURL ? (
+                  <a href={t.webURL} target='_blank' className='large-text'>
+                    Try Website
+                  </a>
+                ) : null}
               </section>
             </div>
           )}

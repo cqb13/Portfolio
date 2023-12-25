@@ -1,5 +1,5 @@
-import NavBar from "../components/navigation/NavBar";
 import { useState, useEffect } from "react";
+import NavBar from "../components/NavBar";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -44,9 +44,11 @@ const Contact = () => {
     }
 
     try {
-      const serviceID = process.env.REACT_APP_VERCEL_ENV_EMAIL_SERVICE_ID;
-      const templateID = process.env.REACT_APP_VERCEL_ENV_EMAIL_TEMPLATE_ID;
-      const userID = process.env.REACT_APP_VERCEL_ENV_EMAIL_USER_ID;
+      const serviceID = import.meta.env
+        .VITE_REACT_APP_VERCEL_ENV_EMAIL_SERVICE_ID;
+      const templateID = import.meta.env
+        .VITE_REACT_APP_VERCEL_ENV_EMAIL_TEMPLATE_ID;
+      const userID = import.meta.env.VITE_REACT_APP_VERCEL_ENV_EMAIL_USER_ID;
 
       if (!serviceID || !templateID || !userID) {
         setStatusMessage("Failed to load information.");
@@ -113,9 +115,13 @@ const Contact = () => {
           rows={10}
           onChange={(event) => setMessage(event.target.value)}
         />
-        <input type="button" value="Send Message" onClick={sendMessage}/>
-        <p className="status-message">{statusMessage}</p>
+        <input type='button' value='Send Message' onClick={sendMessage} />
       </section>
+      {statusMessage != "" ? (
+        <section className='notification'>
+          <p>{statusMessage}</p>
+        </section>
+      ) : null}
     </main>
   );
 };
