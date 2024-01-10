@@ -25,7 +25,7 @@ const About = () => {
               as <b>C++</b> for game dev, but I never really got into them. But
               after taking a CS class in high school I became interested in web
               development, I learned <b>HTML</b> and <b>CSS</b> and then moved
-              on to <b>Javascript</b> and <b>Typescript</b>.
+              on to <b>Javascript</b> and <b>Typescript</b>. I am currently learning <b>Rust</b>.
             </span>
           </article>
           <br />
