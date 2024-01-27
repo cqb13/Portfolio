@@ -88,7 +88,7 @@ const projects: Project[] = [
     description:
       "A command line tool for mapping out a folders structure and creating a tree view of it.",
     techs: [Tech.rust],
-    codeURL: "github.com/cqb13/fmap",
+    codeURL: "https://github.com/cqb13/fmap",
     webURL: "https://foldermap.cqb13.dev/"
   },
   {
