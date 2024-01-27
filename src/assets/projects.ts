@@ -68,12 +68,28 @@ const projects: Project[] = [
   },
   {
     type: "other",
-    title: "Numby Hack Website",
+    title: "Terminal Battleship",
     description:
-      "This is the website for the Numby Hack addon for Meteor client.",
-    techs: [Tech.reactjs, Tech.ts, Tech.css, Tech.flask],
-    codeURL: "https://github.com/cqb13/Numby-Hack-Website",
-    webURL: "https://numbyhack.cqb13.dev/"
+      "A Battleship game implemented in Rust for the terminal! This game features a pass-and-play multiplayer mode and a single-player mode against a computer opponent.",
+    techs: [Tech.rust],
+    codeURL: "https://github.com/cqb13/terminal-battleship"
+  },
+  {
+    type: "other",
+    title: "Terminal Tic-Tac-Toe",
+    description:
+      "Console-based Tic-Tac-Toe game implemented in Rust. The game utilizes the crossterm library for cross-platform terminal manipulation.",
+    techs: [Tech.rust],
+    codeURL: "https://github.com/cqb13/terminal-tic-tac-toe"
+  },
+  {
+    type: "other",
+    title: "fmap",
+    description:
+      "A command line tool for mapping out a folders structure and creating a tree view of it.",
+    techs: [Tech.rust],
+    codeURL: "github.com/cqb13/fmap",
+    webURL: "https://foldermap.cqb13.dev/"
   },
   {
     type: "other",
@@ -84,6 +100,15 @@ const projects: Project[] = [
     codeURL: "https://github.com/cqb13/Custom-Chrome-Tab",
     webURL:
       "https://chrome.google.com/webstore/detail/custom-chrome-tab/abbfmpbemldjofokknphnibmcfpjilpi"
+  },
+  {
+    type: "other",
+    title: "Numby Hack Website",
+    description:
+      "This is the website for the Numby Hack addon for Meteor client.",
+    techs: [Tech.reactjs, Tech.ts, Tech.css, Tech.flask],
+    codeURL: "https://github.com/cqb13/Numby-Hack-Website",
+    webURL: "https://numbyhack.cqb13.dev/"
   },
   {
     type: "other",
@@ -118,15 +143,6 @@ const projects: Project[] = [
     techs: [Tech.python],
     codeURL: "https://github.com/cqb13/Python-Hangman",
     webURL: "https://replit.com/@cqb13/Python-Hangman?v=1"
-  },
-  {
-    type: "other",
-    title: "Github Release Downloads",
-    description:
-      "An API that provides quick access to various information about a specific repositories releases.",
-    techs: [Tech.python, Tech.flask],
-    codeURL:
-      "https://github.com/Templar-Development/Github-Release-Downloads/tree/main"
   }
 ];
 
