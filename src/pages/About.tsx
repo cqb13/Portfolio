@@ -43,7 +43,7 @@ const About = () => {
               development, but I some experience with <b>Node.js</b>, and{" "}
               <b>Rust</b>, and I am proficient with <b>Firebase</b> which I use
               for authentication, and databases, I am also learning{" "}
-              <b>Mongo DB</b>, and <b>SQL</b>.
+              <b>SQL</b>.
             </span>
             <TechIcons techs={Object.values(Tech)} />
           </article>
