@@ -2,8 +2,26 @@ import NavBar from "../components/NavBar";
 import TechIcons from "../components/TechIcons";
 import dev from "../assets/Software-Developer.svg";
 import { Tech } from "../assets/tech";
+import { useEffect, useState } from "react";
 
 const About = () => {
+  const [age, setAge] = useState(0);
+
+  useEffect(() => {
+    setAge(calculateAge());
+  }, []);
+
+  const calculateAge = () => {
+    const today = new Date();
+    const birthDate = new Date("2007-03-30");
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  };
+
   return (
     <main>
       <NavBar type='content' />
@@ -14,7 +32,7 @@ const About = () => {
             <hr />
             <span>
               Hello, my name is <b>Maksim Straus</b>, I go by <b>cqb13</b>, I’m
-              a 16 year old, self-taught,
+              a {age} year old, self-taught,
               <b> web developer</b>. I excel at building websites that work well
               on smartphones, tablets, and desktops.
               <br />
@@ -25,7 +43,8 @@ const About = () => {
               as <b>C++</b> for game dev, but I never really got into them. But
               after taking a CS class in high school I became interested in web
               development, I learned <b>HTML</b> and <b>CSS</b> and then moved
-              on to <b>Javascript</b> and <b>Typescript</b>. I am currently learning <b>Rust</b>.
+              on to <b>Javascript</b> and <b>Typescript</b>. I am currently
+              learning <b>Rust</b>.
             </span>
           </article>
           <br />
@@ -42,8 +61,7 @@ const About = () => {
               tailwind css . I have not delved too deep into backend
               development, but I some experience with <b>Node.js</b>, and{" "}
               <b>Rust</b>, and I am proficient with <b>Firebase</b> which I use
-              for authentication, and databases, I am also learning{" "}
-              <b>SQL</b>.
+              for authentication, and databases, I am also learning <b>SQL</b>.
             </span>
             <TechIcons techs={Object.values(Tech)} />
           </article>
