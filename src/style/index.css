@@ -283,3 +283,9 @@ textarea:focus {
     transform: translateY(0%);
   }
 }
+
+@media screen and (max-width: 475px) {
+  .contact-form section {
+    flex-direction: column;
+  }
+}

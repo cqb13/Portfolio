@@ -88,7 +88,7 @@ const Contact = () => {
             <a href='mailto:cqb13.dev@gmail.com'>cqb13.dev@gmail.com</a>
           </div>
         </div>
-        <section>
+        <section className="names">
           <input
             type='text'
             value={firstName}
