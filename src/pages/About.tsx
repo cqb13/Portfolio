@@ -24,10 +24,10 @@ const About = () => {
 
   return (
     <main>
-      <NavBar type='content' />
-      <section className='content horizontal-container'>
-        <div className='left'>
-          <article className='enter-left'>
+      <NavBar type="content" />
+      <section className="content horizontal-container">
+        <div className="left">
+          <article className="enter-left">
             <h2>About Me</h2>
             <hr />
             <span>
@@ -36,7 +36,7 @@ const About = () => {
               <b> web developer</b>. I excel at building websites that work well
               on smartphones, tablets, and desktops.
               <br />
-              <br />I have been programming for about 5 years now, and have
+              <br />I have been programming for about 6 years now, and have
               learned many languages and frameworks. I started off learning{" "}
               <b>Python</b>, then after I becoming interested in Minecraft
               modding I learned <b>Java</b>. I learned a few more languages such
@@ -48,7 +48,7 @@ const About = () => {
             </span>
           </article>
           <br />
-          <article className='enter-left'>
+          <article className="enter-left">
             <h2>My Skills</h2>
             <hr />
             <span>
@@ -66,8 +66,8 @@ const About = () => {
             <TechIcons techs={Object.values(Tech)} />
           </article>
         </div>
-        <div className='right'>
-          <img src={dev} alt='cool pic' />
+        <div className="right">
+          <img src={dev} alt="cool pic" />
         </div>
       </section>
     </main>
