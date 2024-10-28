@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import { projects } from '../assets/projects.ts'
+import { technologies } from '../assets/technologies.ts'
 const isDownChevronVisible = ref(true)
 
 const handleScroll = () => {
@@ -25,13 +26,17 @@ const startDate = new Date('2018-10-25')
 
 const age = ref(new Date(Date.now() - birthDate.getTime()).getFullYear() - 1970)
 const experience = ref(new Date(Date.now() - startDate.getTime()).getFullYear() - 1970)
+
+const getIconPath = (iconName: string) => {
+  return new URL(`../assets/icons/${iconName}`, import.meta.url).href;
+}
 </script>
 
 <template>
   <main class="px-10">
     <section id="home" class="flex items-center justify-center h-screen">
       <div>
-        <h1 class="font-heading font-black text-9xl select-none">Hi, I'm Maksim</h1>
+        <h1 class="font-heading font-black text-9xl">Hi, I'm Maksim</h1>
         <div class="flex gap-2 justify-center align-center">
           <a href="https://github.com/cqb13" target="_blank"
             class="cursor-pointer hover:fill-highlight transition-all duration-300 ease-in-out">
@@ -61,8 +66,18 @@ const experience = ref(new Date(Date.now() - startDate.getTime()).getFullYear() 
           I’m a {{ age }}-year-old web developer with {{ experience }} years of experience. I have a strong background
           in
           <b class="text-highlight">Java</b>, <b class="text-highlight">TypeScript</b>, and
-          <b class="text-highlight">Rust</b>. I am also passionate about systems-level programming.
+          <b class="text-highlight">Rust</b>.
         </span>
+      </div>
+      <div class="mt-2">
+        <h3 class="font-heading font-black text-3xl">Technologies</h3>
+        <div class="grid grid-cols-4 gap-2">
+          <div v-for="technology in technologies" :key="technology.name"
+            class="border-black border-2 rounded-lg p-10 flex gap-2 align-center">
+            <img :src="getIconPath(technology.icon)" :alt="technology.name" width="60" height="60">
+            <p class="flex flex-col justify-center align-center text-2xl">{{ technology.name }}</p>
+          </div>
+        </div>
       </div>
     </section>
     <section id="projects" class="min-h-screen px-32 pt-40">

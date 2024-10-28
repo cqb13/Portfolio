@@ -2,17 +2,15 @@ export enum Tech {
   rust = 'rust',
   java = 'java',
   python = 'python',
-  cpp = 'cpp',
   ts = 'ts',
   js = 'js',
-  css = 'css',
   html = 'html',
+  css = 'css',
   tailwind = 'tailwind',
   reactjs = 'reactjs',
   nextjs = 'nextjs',
   vue = 'vue',
-  firebase = 'firebase',
-  vscode = 'vscode'
+  firebase = 'firebase'
 }
 
 export type Technology = {
@@ -33,10 +31,7 @@ export const technologies = {
     name: 'Python',
     icon: 'python.svg'
   },
-  [Tech.cpp]: {
-    name: 'C++',
-    icon: 'cpp.svg'
-  },
+
   [Tech.ts]: {
     name: 'TypeScript',
     icon: 'typescript.svg'
@@ -63,7 +58,7 @@ export const technologies = {
   },
   [Tech.nextjs]: {
     name: 'Next.js',
-    icon: 'nextjs.svg'
+    icon: 'next.svg'
   },
   [Tech.vue]: {
     name: 'Vue.js',
@@ -72,9 +67,5 @@ export const technologies = {
   [Tech.firebase]: {
     name: 'Firebase',
     icon: 'firebase.svg'
-  },
-  [Tech.vscode]: {
-    name: 'VS Code',
-    icon: 'vscode.svg'
   }
 }
