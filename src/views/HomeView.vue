@@ -37,7 +37,7 @@ const getIconPath = (iconName: string) => {
     <section id="home" class="flex items-center justify-center h-screen">
       <div>
         <h1 class="font-heading font-black text-9xl">Hi, I'm Maksim</h1>
-        <div class="flex gap-2 justify-center align-center">
+        <div class="flex gap-2 justify-center items-center">
           <a href="https://github.com/cqb13" target="_blank"
             class="cursor-pointer hover:fill-highlight transition-all duration-300 ease-in-out">
             <svg width="60" height="60" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -73,9 +73,9 @@ const getIconPath = (iconName: string) => {
         <h3 class="font-heading font-black text-3xl">Technologies</h3>
         <div class="grid grid-cols-4 gap-2">
           <div v-for="technology in technologies" :key="technology.name"
-            class="border-black border-2 rounded-lg p-10 flex gap-2 align-center">
+            class="border-black border-2 rounded-lg p-10 flex gap-2 items-center">
             <img :src="getIconPath(technology.icon)" :alt="technology.name" width="60" height="60">
-            <p class="flex flex-col justify-center align-center text-2xl">{{ technology.name }}</p>
+            <p class="flex flex-col justify-center items-center text-2xl">{{ technology.name }}</p>
           </div>
         </div>
       </div>
