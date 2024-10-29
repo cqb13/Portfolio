@@ -73,7 +73,7 @@ const getIconPath = (iconName: string) => {
         <h3 class="font-heading font-black text-3xl">Technologies</h3>
         <div class="grid grid-cols-4 gap-2">
           <div v-for="technology in technologies" :key="technology.name"
-            class="border-black border-2 rounded-lg p-10 flex gap-2 items-center">
+            class="border-black border-2 rounded-lg p-10 flex gap-2 items-center hover:scale-[1.01] transition-all duration-300 ease-in-out">
             <img :src="getIconPath(technology.icon)" :alt="technology.name" width="60" height="60">
             <p class="flex flex-col justify-center items-center text-2xl">{{ technology.name }}</p>
           </div>
