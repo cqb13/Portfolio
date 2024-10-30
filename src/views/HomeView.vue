@@ -84,9 +84,9 @@ const getIconPath = (iconName: string) => {
       <h2 class="font-heading font-black text-6xl">Projects</h2>
       <span class="font-body text-xl">View more on
         <a href="https://github.com/cqb13" target="_blank" class="text-highlight">my GitHub</a></span>
-      <section class="flex flex-col gap-2">
+      <section class="grid grid-cols-2 gap-2">
         <div v-for="project in projects">
-          <div v-if="project.type == 'important'" class="bg-slate-50 rounded p-1">
+          <div class="border-black border-2 rounded-lg p-10">
             <section class="flex justify-between gap-2">
               <div class="w-1/2">
                 <h3 class="font-heading font-black text-3xl">{{ project.title }}</h3>
