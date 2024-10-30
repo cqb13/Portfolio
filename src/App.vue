@@ -62,6 +62,10 @@ document.addEventListener('mousemove', function (e) {
     </nav>
   </header>
   <RouterView />
+  <footer class="flex justify-between items-center px-5 py-1 text-sm">
+    <p>Copyright ©2024</p>
+    <p>Created by Maksim Straus</p>
+  </footer>
   <div v-if="lightMode" class="fixed bottom-5 right-5 cursor-pointer" @click="toggleLightMode">
     <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
       class="hover:fill-amber-600 transition-all duration-300 ease-in-out">
