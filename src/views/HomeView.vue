@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { technologies } from '../assets/technologies.ts'
 import { ref, onMounted, onUnmounted } from 'vue'
 import { projects } from '../assets/projects.ts'
-import { technologies } from '../assets/technologies.ts'
 const isDownChevronVisible = ref(true)
 
 const handleScroll = () => {
@@ -39,7 +39,7 @@ const getIconPath = (iconName: string) => {
         <h1 class="font-heading font-black text-9xl">Hi, I'm Maksim</h1>
         <div class="flex gap-2 justify-center items-center">
           <a href="https://github.com/cqb13" target="_blank"
-            class="cursor-pointer hover:fill-highlight transition-all duration-300 ease-in-out">
+            class="cursor-pointer hover:fill-highlight dark:fill-white dark:hover:fill-highlight transition-all duration-300 ease-in-out">
             <svg width="60" height="60" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               class="cursor-pointer">
               <path
@@ -48,7 +48,7 @@ const getIconPath = (iconName: string) => {
           </a>
           <a href="https://www.linkedin.com/in/maksim-straus" target="_blank">
             <svg width="60" height="60" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-              class="cursor-pointer hover:fill-highlight transition-all duration-300 ease-in-out">
+              class="cursor-pointer hover:fill-highlight dark:fill-white dark:hover:fill-highlight transition-all duration-300 ease-in-out">
               <path
                 d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2M8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12 1.57 1.57 0 1 1 0 3.12m12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z" />
             </svg>
@@ -56,8 +56,16 @@ const getIconPath = (iconName: string) => {
         </div>
       </div>
       <a href="#about" class="animate-bounce absolute bottom-20" v-if="isDownChevronVisible">
-        <img src="../assets/chevronDown.svg" alt="chevron down" />
-      </a>
+        <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+          class="fill-black dark:fill-white">
+          <g fill="none" fill-rule="evenodd">
+            <path
+              d="M24 0v24H0V0zM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035q-.016-.005-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427q-.004-.016-.017-.018m.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093q.019.005.029-.008l.004-.014-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014-.034.614q.001.018.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01z" />
+            <path
+              d="M13.06 16.06a1.5 1.5 0 0 1-2.12 0l-5.658-5.656a1.5 1.5 0 1 1 2.122-2.121L12 12.879l4.596-4.596a1.5 1.5 0 0 1 2.122 2.12z"
+              class="fill-dark dark:fill-white" />
+          </g>
+        </svg> </a>
     </section>
     <section id="about" class="min-h-screen px-32 pt-40">
       <div class="w-1/2">
