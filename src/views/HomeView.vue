@@ -30,6 +30,10 @@ const experience = ref(new Date(Date.now() - startDate.getTime()).getFullYear() 
 const getIconPath = (iconName: string) => {
   return new URL(`../assets/icons/${iconName}`, import.meta.url).href;
 }
+
+const getImagePath = (imageName: string) => {
+  return new URL(`../assets/images/${imageName}`, import.meta.url).href;
+}
 </script>
 
 <template>
@@ -94,25 +98,30 @@ const getIconPath = (iconName: string) => {
         <a href="https://github.com/cqb13" target="_blank" class="text-highlight">my GitHub</a></span>
       <section class="grid grid-cols-2 gap-2">
         <div v-for="project in projects">
-          <div class="border-black border-2 rounded-lg p-10">
-            <section class="flex justify-between gap-2">
-              <div class="w-1/2">
-                <h3 class="font-heading font-black text-3xl">{{ project.title }}</h3>
-                <p class="font-heading text-lg">{{ project.description }}</p>
+          <div class="border-black border-2 rounded-lg">
+            <img :src="getImagePath(project.image)" :alt="project.title" class=" h-3/6 rounded-t-md" />
+            <div class="p-10">
+              <section class="flex justify-between gap-2">
+                <div class="w-1/2">
+                  <h3 class="font-heading font-black text-3xl">{{ project.title }}</h3>
+                  <p class="font-heading text-lg">{{ project.description }}</p>
+                </div>
+              </section>
+              <div class="flex gap-2">
+                <img v-for="technology in project.technologies" :src="getIconPath(technologies[technology].icon)"
+                  :alt="technologies[technology].name" class="w-[40px] h-[40px]">
               </div>
-              <div class="w-1/2">
-                <img :src="project.image" :alt="project.title" class="w-full h-5/6 rounded" />
+              <div class="flex gap-2 justify-between items-center text-xl">
+                <a :href="project.github" v-if="project.github" target="_blank"
+                  class="text-highlight font-bold text-center hover:tracking-widest transition-all duration-300 ease-in-out">
+                  View Code
+                </a>
+                <a :href="project.website" v-if="project.website" target="_blank"
+                  class="text-highlight font-bold text-center hover:tracking-widest transition-all duration-300 ease-in-out">
+                  Visit Website
+                </a>
               </div>
-            </section>
-            <div class="flex gap-2 justify-between items-center text-xl">
-              <a :href="project.github" v-if="project.github" target="_blank"
-                class="text-highlight font-bold text-center hover:tracking-widest transition-all duration-300 ease-in-out">
-                View Code
-              </a>
-              <a :href="project.website" v-if="project.website" target="_blank"
-                class="text-highlight font-bold text-center hover:tracking-widest transition-all duration-300 ease-in-out">
-                Visit Website
-              </a>
+
             </div>
           </div>
         </div>

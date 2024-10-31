@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: 'Learning Latin',
     description: '',
     technologies: [Tech.nextjs, Tech.ts, Tech.tailwind],
-    image: '',
+    image: 'learning-latin.png',
     github: 'https://github.com/cqb13/Learning-Latin',
     website: 'https://learninglatin.net'
   },
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     title: 'Vocab Vault',
     description: '',
     technologies: [Tech.rust],
-    image: '',
+    image: 'vocab-vault.png',
     github: 'https://github.com/cqb13/vocab-vault',
     website: 'https://learninglatin.net/translate'
   },
