@@ -99,7 +99,6 @@ const getImagePath = (imageName: string) => {
       <section class="grid grid-cols-2 gap-2">
         <div v-for="project in projects">
           <div class="border-black border-2 rounded-lg">
-            <img :src="getImagePath(project.image)" :alt="project.title" class=" h-3/6 rounded-t-md" />
             <div class="p-10">
               <section class="flex justify-between gap-2">
                 <div class="w-1/2">
