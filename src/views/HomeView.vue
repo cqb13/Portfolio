@@ -100,12 +100,10 @@ const getImagePath = (imageName: string) => {
         <div v-for="project in projects">
           <div class="border-black border-2 rounded-lg">
             <div class="p-10">
-              <section class="flex justify-between gap-2">
-                <div class="w-1/2">
-                  <h3 class="font-heading font-black text-3xl">{{ project.title }}</h3>
-                  <p class="font-heading text-lg">{{ project.description }}</p>
-                </div>
-              </section>
+              <div class="flex flex-col gap-2">
+                <h3 class="font-heading font-black text-3xl">{{ project.title }}</h3>
+                <p class="font-heading text-lg">{{ project.description }}</p>
+              </div>
               <div class="flex gap-2">
                 <img v-for="technology in project.technologies" :src="getIconPath(technologies[technology].icon)"
                   :alt="technologies[technology].name" class="w-[40px] h-[40px]">
@@ -120,7 +118,6 @@ const getImagePath = (imageName: string) => {
                   Visit Website
                 </a>
               </div>
-
             </div>
           </div>
         </div>

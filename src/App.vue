@@ -82,7 +82,7 @@ document.addEventListener('mousemove', function (e) {
     </nav>
   </header>
   <RouterView />
-  <footer class="flex justify-between items-center px-5 py-1 text-sm">
+  <footer class="flex justify-between items-center px-5 text-sm">
     <p>Copyright ©2024</p>
     <p>Created by Maksim Straus</p>
   </footer>
