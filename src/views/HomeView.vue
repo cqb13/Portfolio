@@ -98,8 +98,8 @@ const getImagePath = (imageName: string) => {
         <a href="https://github.com/cqb13" target="_blank" class="text-highlight">my GitHub</a></span>
       <section class="grid grid-cols-2 gap-2">
         <div v-for="project in projects"
-          class="border-black border-2 rounded-lg hover:scale-[1.01] transition-all duration-300 ease-in-out">
-          <div class="p-10">
+          class="flex flex-col gap-2 p-10 justify-between border-black border-2 rounded-lg hover:scale-[1.01] transition-all duration-300 ease-in-out">
+          <div class="flex flex-col gap-2 justify-between h-full">
             <div class="flex flex-col gap-2">
               <h3 class="font-heading font-black text-3xl">{{ project.title }}</h3>
               <p class="font-heading text-lg">{{ project.description }}</p>
@@ -108,16 +108,16 @@ const getImagePath = (imageName: string) => {
               <img v-for="technology in project.technologies" :src="getIconPath(technologies[technology].icon)"
                 :alt="technologies[technology].name" class="w-[40px] h-[40px]">
             </div>
-            <div class="flex gap-2 justify-between items-center text-xl">
-              <a :href="project.github" v-if="project.github" target="_blank"
-                class="text-highlight font-bold text-center hover:tracking-widest transition-all duration-300 ease-in-out">
-                View Code
-              </a>
-              <a :href="project.website" v-if="project.website" target="_blank"
-                class="text-highlight font-bold text-center hover:tracking-widest transition-all duration-300 ease-in-out">
-                Visit Website
-              </a>
-            </div>
+          </div>
+          <div class="flex gap-2 justify-between text-center items-center text-xl">
+            <a :href="project.github" v-if="project.github" target="_blank"
+              class="text-highlight font-bold text-center hover:tracking-widest transition-all duration-300 ease-in-out">
+              View Code
+            </a>
+            <a :href="project.website" v-if="project.website" target="_blank"
+              class="text-highlight font-bold text-center hover:tracking-widest transition-all duration-300 ease-in-out">
+              Visit Website
+            </a>
           </div>
         </div>
       </section>
