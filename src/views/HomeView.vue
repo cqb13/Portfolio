@@ -60,27 +60,27 @@ const sendEmail = async () => {
 
     console.log(formData)
 
-    if (!formData.value.firstName || !formData.value.lastName || !formData.value.email || !formData.value.message) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
       throw new Error('Please fill in all fields')
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(formData.value.email)) {
+    if (!emailRegex.test(formData.email)) {
       throw new Error('Please enter a valid email address')
     }
 
     // Convert newlines to HTML line breaks for email
-    const formattedMessage = formData.value.message
+    const formattedMessage = formData.message
       .replace(/\n/g, '<br>')  // Convert newlines to HTML breaks
       .replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;')  // Convert tabs to spaces
       .replace(/ {2,}/g, match => '&nbsp;'.repeat(match.length)) // Preserve multiple spaces
 
     const templateParams = {
-      from_name: `${formData.value.firstName} ${formData.value.lastName}`,
-      from_email: formData.value.email,
+      from_name: `${formData.firstName} ${formData.lastName}`,
+      from_email: formData.email,
       message: formattedMessage,
       // Include original message for plain text emails
-      message_plain: formData.value.message
+      message_plain: formData.message
     }
 
     await emailjs.send(
@@ -100,6 +100,7 @@ const sendEmail = async () => {
     successMessage.value = 'Message sent successfully!'
     clearMessageAfterDelay(successMessage)
   } catch (error) {
+    console.log(error)
     errorMessage.value = error instanceof Error ? error.message : 'Failed to send message'
     clearMessageAfterDelay(errorMessage)
   }
