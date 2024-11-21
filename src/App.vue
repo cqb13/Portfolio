@@ -1,13 +1,15 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
-if (localStorage.getItem('dark-mode') === 'true' || (!('dark-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+const darkMode = ref(false)
+
+if (localStorage.getItem('dark-mode') === 'true') {
+  darkMode.value = true;
   document.querySelector('html').classList.add('dark');
 } else {
+  darkMode.value = false;
   document.querySelector('html').classList.remove('dark');
 }
-
-const darkMode = ref(false)
 
 if (localStorage.getItem('dark-mode') === 'true') {
   darkMode.value = true;
