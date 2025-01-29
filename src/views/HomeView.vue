@@ -167,7 +167,7 @@ const sendEmail = async () => {
     <section id="projects" class="min-h-screen px-32 pt-40 max-lg:px-16 max-semiLg:px-5 max-sm:px-1">
       <h2 class="font-heading font-black text-6xl">Projects</h2>
       <span class="font-body text-xl">View more on
-        <a href="https://github.com/cqb13" target="_blank" class="text-highlight">my GitHub</a></span>
+        <a href="https://github.com/cqb13" target="_blank" class="text-highlight hover:underline">my GitHub</a></span>
       <section class="grid grid-cols-2 gap-2 max-semiLg:grid-cols-1">
         <div v-for="project in projects"
           class="flex flex-col gap-2 p-10 justify-between border-black border-2 rounded-lg hover:scale-[1.01] transition-all duration-300 ease-in-out">
@@ -197,7 +197,7 @@ const sendEmail = async () => {
     <section id="contact" class="min-h-screen px-32 pt-40 max-lg:px-16 max-semiLg:px-5 max-sm:px-1">
       <h2 class="font-heading font-black text-6xl">Contact</h2>
       <a href="mailto:cqb13.dev@gmail.com" target="_blank"
-        class="font-body text-xl text-highlight">cqb13.dev@gmail.com</a>
+        class="font-body text-xl text-highlight hover:underline">cqb13.dev@gmail.com</a>
       <section class="flex flex-col gap-2">
         <div class="flex gap-2 items-center max-xs:flex-col">
           <input type="text" v-model="formData.firstName" placeholder="Enter first name..."
