@@ -83,7 +83,7 @@ document.addEventListener('mousemove', function (e) {
   </header>
   <RouterView />
   <footer class="flex justify-between items-center px-5 text-sm">
-    <p>Copyright ©2024</p>
+    <p>Copyright ©2025</p>
     <p>Created by Maksim Straus</p>
   </footer>
   <div v-if="!darkMode" class="fixed bottom-5 right-5 cursor-pointer" @click="toggleDarkMode">
