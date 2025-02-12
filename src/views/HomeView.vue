@@ -147,7 +147,7 @@ const sendEmail = async () => {
       <div class="w-1/2 max-xl:w-8/12 max-lg:w-11/12">
         <h2 class="font-heading font-black text-6xl">About Me</h2>
         <span class="font-body text-2xl">
-          I’m a {{ age }}-year-old web developer with {{ experience }} years of experience. I have a strong background
+          I’m a {{ age }}-year-old developer with {{ experience }} years of experience. I have a strong background
           in
           <b class="text-highlight">Java</b>, <b class="text-highlight">TypeScript</b>, and
           <b class="text-highlight">Rust</b>.
