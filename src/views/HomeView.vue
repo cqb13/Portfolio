@@ -22,7 +22,7 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
 
-const birthDate = new Date('2007-3-30')
+const birthDate = new Date('2007-03-30')
 
 const startDate = new Date('2018-10-25')
 
