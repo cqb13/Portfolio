@@ -98,8 +98,6 @@ const sendEmail = async () => {
     errorMessage.value = ''
     successMessage.value = ''
 
-    console.log(formData)
-
     if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
       throw new Error('Please fill in all fields')
     }
