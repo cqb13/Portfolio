@@ -261,8 +261,8 @@ const sendEmail = async () => {
     </section>
     <section id="contact" class="min-h-screen px-32 pt-40 max-lg:px-16 max-semiLg:px-5 max-sm:px-1">
       <h2 class="font-heading font-black text-6xl">Contact</h2>
-      <a href="mailto:cqb13.dev@gmail.com" target="_blank"
-        class="font-body text-xl text-highlight hover:underline">cqb13.dev@gmail.com</a>
+      <a href="mailto:maksim@maksimstraus.com" target="_blank"
+        class="font-body text-xl text-highlight hover:underline">maksim@maksimstraus.com</a>
       <section class="flex flex-col gap-2">
         <div class="flex gap-2 items-center max-xs:flex-col">
           <input type="text" v-model="formData.firstName" placeholder="Enter first name..."
