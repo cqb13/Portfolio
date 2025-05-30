@@ -11,6 +11,18 @@ html {
   scroll-behavior: smooth;
 }
 
+@-moz-document url-prefix() {
+  .wrapper {
+    opacity: 0.5;
+  }
+
+  .blob {
+    width: 450px !important;
+    height: 450px !important;
+    opacity: 0.35;
+  }
+}
+
 /* thanks to: https://codepen.io/Iseyaaaaa/pen/qBMNEGN*/
 .blob {
   display: flex;
