@@ -21,7 +21,7 @@ export const projects: Project[] = [
     title: 'Talon Games',
     description:
       'An interactive games platform built for the Sharon Talon Newspaper, featuring crosswords, mini crosswords, and other puzzles.',
-    technologies: [Tech.nextjs, Tech.ts, Tech.tailwind, Tech.firebase],
+    technologies: [Tech.nextjs, Tech.ts, Tech.tailwind],
     github: 'https://github.com/Talon-Games/talon-games',
     website: 'https://games.shstalon.com'
   },
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     title: 'SHS Hackathon Website',
     description:
       'The official website for the SHS Hackathon, a STEM event hosted by the Sharon High School Web Development Club & Girls Who Code.',
-    technologies: [Tech.nextjs, Tech.ts, Tech.tailwind, Tech.firebase],
+    technologies: [Tech.nextjs, Tech.ts, Tech.tailwind],
     github: 'https://github.com/cqb13/shs-hackathon',
     website: 'https://hackathon.shsdevs.com/'
   },
