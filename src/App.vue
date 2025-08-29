@@ -152,6 +152,8 @@ const sendEmail = async () => {
         href="https://github.com/cqb13" target="_blank">GitHub</a>
       <a class="font-heading font-bold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 m-0 px-2 tracking-wider ease-in-out"
         href="https://www.linkedin.com/in/maksim-straus/" target="_blank">LinkedIn</a>
+      <a class="font-heading font-bold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 m-0 px-2 tracking-wider ease-in-out"
+        href="/Maksim_Straus_CV.pdf" target="_blank">Resume</a>
     </div>
     <div v-if="isCenterDivVisible" class="flex items-center flex-col gap-0 max-semiLg:hidden">
       <p class="font-heading font-black text-xl text-center">Maksim Straus</p>
