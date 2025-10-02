@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     title: 'Learning Latin',
     description:
-      'A modern, interactive platform designed to make Latin language learning accessible and engaging for users of all levels.',
+      'A website with many resouces for learning latin, such as declension charts, games, and a translator.',
     technologies: [Tech.nextjs, Tech.ts, Tech.tailwind],
     github: 'https://github.com/cqb13/Learning-Latin',
     website: 'https://learninglatin.net'
@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     title: 'Talon Games',
     description:
-      'An interactive games platform built for the Sharon Talon Newspaper, featuring crosswords, mini crosswords, and other puzzles.',
+      'A games website for the Sharon Talon Newspaper, featuring crosswords, mini crosswords, and other puzzles.',
     technologies: [Tech.nextjs, Tech.ts, Tech.tailwind],
     github: 'https://github.com/Talon-Games/talon-games',
     website: 'https://games.shstalon.com'
@@ -28,7 +28,7 @@ export const projects: Project[] = [
   {
     title: 'Vocab Vault',
     description:
-      "A CLI tool that enables translation between English and Latin, powered by the Whitaker's Words Data.",
+      "A CLI tool for translation between English and Latin, powered by the Whitaker's Words Data.",
     technologies: [Tech.rust],
     github: 'https://github.com/cqb13/vocab-vault',
     website: 'https://learninglatin.net/translate'
@@ -49,11 +49,10 @@ export const projects: Project[] = [
     website: 'https://hackathon.shsdevs.com/'
   },
   {
-    title: 'Folder Mapper',
-    description:
-      "Generates a visual map of a directory's structure, making it easy to view and analyze folder hierarchies",
-    technologies: [Tech.vue, Tech.ts, Tech.tailwind],
-    github: 'https://github.com/cqb13/folder-mapper',
-    website: 'https://foldermap.cqb13.dev'
+    title: 'Meteor Addon List',
+    description: 'A website for finding open source Meteor Client Addons.',
+    technologies: [Tech.reactjs, Tech.ts, Tech.tailwind, Tech.go],
+    github: 'https://github.com/cqb13/meteor-addons',
+    website: 'https://meteoraddons.com'
   }
 ]
