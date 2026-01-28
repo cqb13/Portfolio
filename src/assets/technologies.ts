@@ -1,9 +1,9 @@
 export enum Tech {
-  rust = 'rust',
   java = 'java',
   ts = 'ts',
-  js = 'js',
   go = 'go',
+  js = 'js',
+  rust = 'rust',
   python = 'python',
   html = 'html',
   css = 'css',
@@ -19,10 +19,6 @@ export type Technology = {
 }
 
 export const technologies = {
-  [Tech.rust]: {
-    name: 'Rust',
-    icon: 'rust.svg'
-  },
   [Tech.java]: {
     name: 'Java',
     icon: 'java.svg'
@@ -31,13 +27,17 @@ export const technologies = {
     name: 'TypeScript',
     icon: 'typescript.svg'
   },
+  [Tech.go]: {
+    name: 'Go',
+    icon: 'go.svg'
+  },
   [Tech.js]: {
     name: 'JavaScript',
     icon: 'javascript.svg'
   },
-  [Tech.go]: {
-    name: 'Go',
-    icon: 'go.svg'
+  [Tech.rust]: {
+    name: 'Rust',
+    icon: 'rust.svg'
   },
   [Tech.python]: {
     name: 'Python',

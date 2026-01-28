@@ -217,7 +217,7 @@ const sendEmail = async () => {
           I’m a {{ age }}-year-old developer with {{ experience }} years of experience. I have a strong background
           in
           <b class="text-highlight">Java</b>, <b class="text-highlight">TypeScript</b>, and
-          <b class="text-highlight">Rust</b>.
+          <b class="text-highlight">Go</b>.
         </span>
       </div>
       <div class="mt-2">
@@ -286,7 +286,7 @@ const sendEmail = async () => {
     </section>
   </main>
   <footer class="flex justify-between items-center px-5 text-sm">
-    <p>Copyright ©2025</p>
+    <p>Copyright ©2026</p>
     <p>Created by Maksim Straus</p>
   </footer>
   <div v-if="!darkMode" class="fixed bottom-5 right-5 cursor-pointer" @click="toggleDarkMode">
