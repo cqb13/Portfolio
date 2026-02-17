@@ -62,11 +62,10 @@ document.addEventListener('mousemove', function (e) {
   cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
 });
 
-const birthDate = new Date('2007-03-30')
 
+// based on the date for the earliest program I wrote and later found on my computer, might not be 100% accurate
 const startDate = new Date('2018-10-25')
 
-const age = ref(new Date(Date.now() - birthDate.getTime()).getFullYear() - 1970)
 const experience = ref(new Date(Date.now() - startDate.getTime()).getFullYear() - 1970)
 
 const getIconPath = (iconName) => {
@@ -214,7 +213,7 @@ const sendEmail = async () => {
       <div class="w-1/2 max-xl:w-8/12 max-lg:w-11/12">
         <h2 class="font-heading font-black text-6xl">About Me</h2>
         <span class="font-body text-2xl">
-          I’m a {{ age }}-year-old developer with {{ experience }} years of experience. I have a strong background
+          I have {{ experience }} years of programming experience, and I have a strong background
           in
           <b class="text-highlight">Java</b>, <b class="text-highlight">TypeScript</b>, and
           <b class="text-highlight">Go</b>.
